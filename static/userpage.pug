@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="http://localhost:3030/styles/userpage.css")
+    body
+        div(id="hubs-list")
+            ul 
+                each val, index in hubs
+                    a(href="/hub/" + val.link + "?token=" + token) 
+                        li 
+                            div(class="hub-picture")
+                                img(src="http://localhost:3030/hubPictures/" + val.imagePath, alt="hub")
+                            span #{val.hubName}
+            a(href="/enterHub?token=" + token, id="enter-server-button")
+                button Enter New Hub 
+
+        div(id="profile-tab")
+            div(id="profile-picture")
+                img(src="http://localhost:3030/profilePictures/" + picture, alt="avatar")
+            span(id="login") #{login}
+            a(href="/editProfile?token=" + token, id="edit-profile-button")
+                button  Edit Profile
+            

@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="http://localhost:3030/styles/userpage.css")
+        link(rel="stylesheet", href="http://localhost:3030/styles/hub.css")
+    body 
+        div(id="hub-box")
+            div(id="hub-name") #{hub.hubName} 
+            div(id="room-box")
+                div(class="room-example") #{room.name}
+
+        select(name="datatype", id="datatype-selector") 
+        button(id='filter-button') Filter
+        button(id='restore-button') Restore Filters
+
+        div(id="chat-box")
+            div(id="message-box")
+            div(id="enter-box")
+                input(id="file-input", type="file", name="file")
+                label(id="file-label", for="file-input") 
+                    span +
+                
+                input(id="text-input", type="text", name="message")
+                button(id="send-button") Send message
+
+        div(id="profile-tab")
+            div(id="profile-picture")
+                img(src="http://localhost:3030/profilePictures/" + user.imagePath, alt="avatar")
+            span(id="login") #{user.login}
+            a(href="/editProfile?token=" + token, id="edit-profile-button")
+                button  Edit Profile
+
+    script(src="http://localhost:3030/scripts/messageModule.js")

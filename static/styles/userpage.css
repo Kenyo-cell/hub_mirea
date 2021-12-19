@@ -1,0 +1,71 @@
+#hubs-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hubs-list ul {
+    width: 50%;
+}
+
+#hubs-list ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#profile-picture, .hub-picture {
+    width: 85px;
+    height: 85px;
+    border: 5px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-picture img, .hub-picture img {
+    height: 100%;
+    width: auto;
+}
+
+#profile-tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 25%;
+    height: 13%;
+
+    background-color: gray;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+#profile-tab span, #profile-picture, #profile-tab a button {
+    margin-left: 5%;
+}
+
+.hub-picture, .hub-picture~span {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ul {
+    padding: 0%;
+}
+
+#hubs-list {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#enter-server-button {
+    position: fixed;
+    right: 2%;
+    top: 50%;
+}

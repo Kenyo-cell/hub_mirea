@@ -1,0 +1,88 @@
+body {
+    height: 100vh;
+}
+
+#chat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+
+#message-box {
+    overflow: scroll;
+
+    background-color: bisque;
+    height: 87%;
+}
+
+#message-box, #enter-box {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 3%;
+    right: 2%
+}
+
+#message-box {
+    bottom: 13%;
+    display: block;
+}
+
+#text-input {
+    width: 80%;
+}
+
+#file-input {
+    display: none;
+}
+
+#file-label {
+    margin-right: 2%;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#file-label span {
+    cursor: pointer;
+}
+
+.message {
+    height: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.image-box {
+    width: 5vh;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.text-box {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.message-profile-picture {
+    height: 100%;
+    width: auto;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="http://localhost:3030/styles/sign.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="reg-from">
+        <form action="http://localhost:3030/register" method="post" enctype="multipart/form-data">
+            <ul>
+                <li class="form-el">
+                    <label>
+                        <div>Profile Picture</div>
+                        <input type="file" name="picture" accept="image/*">
+                    </label>
+                </li>
+                <li class="form-el">
+                    <label>
+                        <div>Login</div>
+                        <input type="text" required name="login">
+                    </label>
+                </li>
+                <li class="form-el">
+                    <label>
+                        <div>Password</div>
+                        <input type="password" required name="pass">
+                    </label>
+                </li>
+                <li class="form-el">
+                    <input type="submit" value="Sign Up">
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

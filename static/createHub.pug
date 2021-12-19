@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        div(id="create-hub-form")
+            form(action="/createHub?token=" + token, method="post", enctype="multipart/form-data")
+                ul 
+                    li
+                        label 
+                            div Hub Picture
+                            input(type="file", name="picture", accept="image/*")
+                    li
+                        label 
+                            div Hub Name
+                            input(type="text", name="hubName")
+                    li
+                        label
+                            input(type="submit", name="Commit Changes")

@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        form(action="/enterHub?token=" + token, method="post") 
+            label 
+                div Enter Hub Inner Link
+                input(type="text", name="link")
+                input(type="submit")
+        div Or Create New Hub
+        a(href="/createHub?token=" + token)
+            button Create Your Own Hub
